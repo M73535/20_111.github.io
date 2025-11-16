@@ -84,7 +84,7 @@ const galaxyParameters = {
   outsideColor: new THREE.Color(0x48b8b8),
 };
 
-const defaultHeartImages = Array.from({ length: 2 }, (_, i) => `images/img${i + 1}.jpg`);
+const defaultHeartImages = Array.from({ length: 4 }, (_, i) => `images/img${i + 1}.jpg`);
 
 const heartImages = [
   ...(window.dataCCD?.data?.heartImages || []),
@@ -614,7 +614,7 @@ const ringTexts = [
   'NGÀY NHÀ GIÁO VIỆT NAM',
   "Kính chúc thầy cô luôn giữ mãi ngọn lửa đam mê và niềm tin yêu trong từng bài giảng!",
   "Chúc thầy cô luôn mạnh khỏe, hạnh phúc và thành công trong sự nghiệp trồng người!",
-  "20/11/2025",
+  "Chúc cô luôn giữ nụ cười trên môi và tràn đầy nhiệt huyết với bài giảng mỗi ngày.",
   ...(window.dataCCD && window.dataCCD.data.ringTexts ? window.dataCCD.data.ringTexts : [])
 ];
 
@@ -819,7 +819,7 @@ let galaxyAudio = null;
 
 function preloadGalaxyAudio() {
   const audioSources = [
-    "AE THEM NHAC TUY NHA"
+    "https://soundcloud.com/nguy-n-minh-qu-n-803138753/anh-a-tu-ng-co-ga-ng-remix"
   ];
 
   const randomIndex = Math.floor(Math.random() * audioSources.length);
